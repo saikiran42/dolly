@@ -1,0 +1,86 @@
+*we should check, if Source client credentials are maintain in the secure area or not
+
+* We will have to login to Source client and check, if we are able to login with credes maintained in the secure area, if not we will have to revert back to the client.
+*Enter required parameters in SPC and creae PID
+*If the Client size is more than 300 gb, recommend the user to go for client export
+
+*TCuser is copied from 000 client to customer target client, so that we can login to customer client with tuser. this is done by the procedure.
+
+
+
+
+
+
+Ajith Rao: Remote Client Copy 
+
+ 
+
+Procedure Details: 
+
+Procedure ID: ACE11023 
+
+If technically possible the Add-on CLOUDLM will be installed in the target system (not in the source system)  
+
+and the Client Copy will be executed automatically. If not approved by the customer, the Add-on will be deleted  
+
+from the system after the client copy Is completed. 
+
+ 
+
+TQS Roles: 
+
+Acknowledge and qualify the ticket. 
+
+Check the ticket description & additional comments (if any) 
+
+Check if below information is provided in ticket (If any of the below information is not available revert to customer requesting for the same) 
+
+Target System number for the copy  
+
+Source and Target client for the copy 
+
+Profile to be used for the copy 
+
+Check if Source system credentials are maintained in secure area and its working 
+
+If all the above details are available, proceed with scheduling the activity with all mandatory parameters 
+
+Procedure ID: ACE11023  
+
+Ticket is created using source system number. 
+
+ 
+
+Requirements from Customer: 
+
+Source Client 
+
+Target Client 
+
+Source Client Profile 
+
+Source Client User Credentials 
+
+Downtime 
+
+ 
+
+Pre-Checks: 
+
+RFC connection creation and checking will be performed during prechecks phase by procedure. 
+
+ 
+
+ 
+
+ 
+
+In case of inconsistency, request customer to clear the inconsistencies or confirm with customer if we can exclude the inconsistency. 
+
+Once activity is scheduled and prechecks are completed make sure Process ID is on HOLD for execution. 
+
+ 
+
+Post-Checks: 
+
+It will delete temporary RFC connection created between source and target system. 
